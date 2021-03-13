@@ -1,0 +1,18 @@
+<p class="text-xl-start">Rentals </p>
+<hr>
+<table class="table">
+    <thead>
+        <td>ID</td>
+        <td>CAR ID</td>
+        <td>CUSTOMER ID</td>
+        <td>RENT DATE</td>
+        <td>RETURN DATE</td>
+    </thead>
+    <tr *ngFor="let rental of rentals">
+        <td>{{rental.id}}</td>
+        <td>{{rental.carId}}</td>
+        <td>{{rental.customerId}}</td>
+        <td>{{rental.rentDate}}</td>
+        <td>{{rental.returnDate}}</td>
+    </tr>
+</table>

@@ -1,0 +1,14 @@
+<p class="text-xl-start">Customers </p>
+<hr>
+<table class="table">
+    <thead>
+        <td>ID</td>
+        <td>USER ID</td>
+        <td>COMPANY NAME</td>
+    </thead>
+    <tr *ngFor="let customer of customers">
+        <td>{{customer.id}}</td>
+        <td>{{customer.userId}}</td>
+        <td>{{customer.companyName}}</td>
+    </tr>
+</table>

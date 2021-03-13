@@ -1,0 +1,20 @@
+<p class="text-xl-start">Cars </p>
+<hr>
+<table class="table">
+    <thead>
+        <td>ID</td>
+        <td>BRAND ID</td>
+        <td>COLOR ID</td>
+        <td>MODEL YEAR</td>
+        <td>DAILY PRICE</td>
+        <td>DESC.</td>
+    </thead>
+    <tr *ngFor="let car of cars">
+        <td>{{car.id}}</td>
+        <td>{{car.brandId}}</td>
+        <td>{{car.colorId}}</td>
+        <td>{{car.modelYear}}</td>
+        <td>{{car.dailyPrice}}</td>
+        <td>{{car.description}}</td>
+    </tr>
+</table>

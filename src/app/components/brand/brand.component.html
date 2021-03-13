@@ -1,0 +1,14 @@
+<p class="text-xl-start">Brands </p>
+<hr>
+<table class="table">
+    <thead>
+    <td>BRAND ID</td>
+    <td>BRAND NAME</td>
+        
+    </thead>
+    <tr *ngFor="let brand of brands">
+        <td>{{brand.brandId}}</td>
+        <td>{{brand.brandName}}</td>
+        
+    </tr>
+</table>
