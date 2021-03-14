@@ -1,12 +1,10 @@
-<p class="text-xl-start">Colors </p>
-<hr>
-<table class="table">
-    <thead>
-        <td>COLOR ID</td>
-        <td>COLOR NAME</td>
-    </thead>
-    <tr *ngFor="let color of colors">
-        <td>{{color.colorId}}</td>
-        <td>{{color.colorName}}</td>
-    </tr>
-</table>
+<h3><small class="text-muted">Colors</small></h3>
+<ul class="list-group">
+    <li (click)="setCurrentColor({colorId:0,colorName:''});"   [class]="getAllColor()" routerLink="">Tüm Renkler</li>
+    <li (click)="setCurrentColor(color)" 
+    routerLink="/cars/color/{{color.colorId}}"
+    *ngFor="let color of colors"
+    [class]="getCurrentColor(color)" value="{{color.colorId}}">
+        {{color.colorName}}
+    </li>
+</ul>
